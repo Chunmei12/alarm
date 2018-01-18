@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alarmclock.administrator.alarmclock.Views.SquareFrameLayout
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:padding="5dp"
+        android:id="@+id/rv_common_view"
+        >
+
+
+        <TextView
+            android:id="@+id/mySwitch_Text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBg"
+            android:text="fsddd"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+             />
+        <TextView
+            android:id="@+id/mySwitch_repeat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            />
+        <Switch
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBg"
+            android:textSize="30dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</com.alarmclock.administrator.alarmclock.Views.SquareFrameLayout>

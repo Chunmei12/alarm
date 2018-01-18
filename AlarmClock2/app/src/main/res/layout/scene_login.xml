@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_centerInParent="true">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBg"
+            android:textSize="38sp"
+            android:text="Login"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="Haven't an account?"
+            android:onClick="goToSignUp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/erro_login"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBg"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBg"
+            android:text="Password"/>
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"/>
+
+        <RelativeLayout
+            android:layout_height="@dimen/bar_height"
+            android:layout_width="150dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorBg"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rlt_bg">
+
+            <com.alarmclock.administrator.alarmclock.Views.LoginLoadingView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:id="@+id/login_view"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

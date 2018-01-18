@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_centerInParent="true">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBg"
+        android:textSize="38sp"
+        android:text="Sign Up"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:text="Have an account?"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/errotext"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBg"
+        android:text="Name"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBg"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBg"
+        android:text="Password"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBg"
+        android:text="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/passconfir"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"/>
+
+
+    <RelativeLayout
+        android:layout_height="@dimen/bar_height"
+        android:layout_width="150dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorBg"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rlt_bg">
+
+    <com.alarmclock.administrator.alarmclock.Views.SignUpLoading
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/SignUp_view"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
